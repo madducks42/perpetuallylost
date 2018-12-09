@@ -1,3 +1,5 @@
+/* Lightbox code created by Lokesh Dhaker -  https://lokeshdhakar.com/projects/lightbox2 */
+
 html.lb-disable-scrolling {
   overflow: hidden;
   /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
