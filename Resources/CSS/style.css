@@ -39,41 +39,50 @@ h2 {
   font-size: 2.5rem;
   font-weight: bold;
   color: black;
+  font-family: Papyrus;
 }
 
 h3 {
   font-size: 2rem;
   font-weight: 500;
   color: black;
+  font-family: Papyrus;
 }
 
 h4 {
   font-size: 1.3rem;
   color: black;
+  font-family: Papyrus;
+}
+
+h5 {
+  font-size: 1rem;
+  color: black;
+  font-family: Papyrus;
 }
 
 p {
   font-size: 1rem;
   color: black;
   font-weight: 100;
-
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: square;
+  margin-bottom: 5px;
 }
 
 li {
   font-size: 1rem;
   color: black;
   font-weight: 50;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .flexcontainer {
   display: flex;
 }
-
-/* Header Style */
 
 /* Header Style */
 
@@ -117,14 +126,15 @@ nav li {
 .banner-leftside {
   width: 60%;
   height: auto;
-  padding: 32px 24px;
+  padding: 42px 24px;
   margin: 0 auto;
+  vertical-align: middle;
 }
 
 .banner-leftside img {
   width: 100%;
   height: auto;
-  align-items: center;
+  border:1px solid #021a40;
 }
 
 .banner-rightside {
@@ -154,23 +164,23 @@ nav li {
   padding: 5px;
 }
 
-.bannercontent h1, p {
-  padding-bottom: 30px;
+.bannercontent h4 p {
   color: black;
 }
 
-.bannercontent a {
-  color: white;
-  background-color: #B7B8B6;
-  border-radius: 4px;
-  text-align: center;
-  padding: 1rem;
-  font-size: 1rem;
+.bannercontent, .home h4 {
+  padding: 0px 15px 0px 15px;
+  color: black;
+}
+
+.bannercontent, .home p {
+  padding: 0px 15px 10px 15px;
+  color: black;
 }
 
 .bannercontent a:hover {
-  background-color: #4D648D;
-  color: #white;
+  color: #1E1F26;
+  font-weight: 400;
 }
 
   /* Blog Style */
@@ -182,7 +192,7 @@ nav li {
 }
 
 #blog h1 {
-  padding: 32px;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -203,11 +213,8 @@ nav li {
   height: auto;
   margin: 10px;
   background-color: #F0EFF0;
-}
-
-.blogpost img {
-  width: 100%;
-  height: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .bloginfo {
@@ -216,18 +223,27 @@ nav li {
   flex-wrap: wrap;
   width: 90%;
   height: auto;
-  padding: 16px 16px 24px 16px;
+  padding: 5px;
 }
 
 .bloginfo h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  border-bottom: .5px dotted #3A3740;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-decoration: underline;
 }
 
-.bloginfo h4 {
-  padding-top: 20px;
-  padding-bottom: 15px;
+.bloginfo img {
+  width: 100%;
+  height: 12rem;
+  justify-content: center;
+  margin: auto;
+}
+
+.bloginfo p {
+padding-top: 10px;
 }
 
 /*Lightbox Gallery Style*/
@@ -268,4 +284,76 @@ nav li {
   height: 15rem;
   border-radius: 4px;
   padding-bottom: 5px;
+}
+
+/* Prints Style */
+
+#prints {
+background-color: #FFFFFF;
+width: 100%;
+height: auto;
+}
+
+#prints h3 {
+padding-top: 20px;
+text-align: center;
+}
+
+#prints .flexcontainer {
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+width: 100%;
+height: auto;
+padding-bottom: 32px;
+}
+
+.printspost {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+width: 20rem;
+height: auto;
+margin: 10px;
+background-color: #F0EFF0;
+justify-content: center;
+align-items: center;
+}
+
+.printsinfo {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+width: 90%;
+height: auto;
+padding: 5px;
+}
+
+.printsinfo h3 {
+font-size: 1.5rem;
+font-weight: 700;
+text-align: center;
+padding-bottom: 10px;
+padding-top: 10px;
+text-decoration: underline;
+}
+
+.printsinfo img {
+width: 100%;
+height: 12rem;
+justify-content: center;
+margin: auto;
+}
+
+.printsinfo p {
+padding-top: 10px;
+}
+
+/*Footer Style*/
+
+footer p {
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-weight: 100;
+  padding-top: 5px;
 }
