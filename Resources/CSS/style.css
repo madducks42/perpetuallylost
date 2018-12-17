@@ -2,28 +2,31 @@
 
 /* Color Scheme
 
-Blue Theme:
-Main Background Color - Midnight Blue - #1E1F26
+Main Background Color - #878F92
 Blog Post Background Color - Light Grey - #F0EFF0
 Flexbox - White - #FFFFFF
 
 */
 
 html {
-font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-font-family: Rubik, Helvetica, sans-serif;
-width: 100%;
-margin: 0 auto;
-background-color: #878F92;
+  font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #878F92;
 }
 
 
 a {
-text-decoration: none;
-color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 h1 {
@@ -49,9 +52,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: black;
   font-family: Papyrus;
+  text-shadow: 1px 1px 1px #FFFFFF;
+  line-height: 1.4;
 }
 
 h5 {
@@ -83,6 +88,15 @@ li {
   display: flex;
 }
 
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
 /* Header Style */
 
 header {
@@ -90,29 +104,62 @@ header {
   align-items: center;
   height: 64px;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   background-color: #FFFFFF;
   position: fixed;
 }
 
-.logo {
+.logo-big {
   display: inline;
-  justify-content: flex-start;
-  height: 100%;
+  padding-left: 5px;
+  padding-right: 180px;
 }
 
-.logo img{
-  height: auto;
-  width: 700px;
+.logo-big img{
+  height: 80%;
+  width: 500px;
+}
+
+header .logo-small {
+  display: none;
+  height: 80%;
+}
+
+header .logo-small,
+header .logo-big {
+  flex-grow: 1;
 }
 
 nav li {
   display: inline;
-  width: auto;
-  padding-left: 40px;
-  margin-left: 50px;
+  padding-right: 2rem;
+}
 
+@media only screen and (max-width: 990px) {
+  header .logo-big {
+    display: none;
+  }
+
+  header .logo-small {
+    display: flex;
+  }
+
+  header img {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  header {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  header .logo-small {
+    margin-bottom: 1rem;
+  }
 }
 
 /* Landing Style */
@@ -129,14 +176,14 @@ nav li {
 
 #banner {
   background-color: #878F92;
-  margin-bottom: 32px;
+  padding-top: 80px;
+  padding-bottom: 32px;
 }
 
 .banner-leftside {
-  width: 60%;
+  width: 45%;
   height: auto;
-  padding: 42px 24px;
-  margin: 0 auto;
+  padding: 20px;
   vertical-align: middle;
 }
 
@@ -257,8 +304,12 @@ padding-top: 10px;
 
 /*Lightbox Gallery Style*/
 
-#gallery {
+#arenal {
+  background-color: #FFFFFF;
+}
 
+#drake {
+  background-color: #878F92;
 }
 
 .galleryinfo {
@@ -268,7 +319,7 @@ padding-top: 10px;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  background-color: #FFFFFF;
+
 }
 
 .galleryinfo h1 {
@@ -280,19 +331,17 @@ padding-top: 10px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
-  background-color: #878F92;
   width: auto;
   height: auto;
-  margin-bottom: 32px;
-  padding: 10px;
+  padding: 2px;
+  margin-bottom: 10px;
 }
 
 .galleryimage {
   width: 22rem;
   height: 15rem;
   border-radius: 4px;
-  padding-bottom: 5px;
+  padding: 1px;
 }
 
 /* Prints Style */
@@ -360,9 +409,14 @@ padding-top: 10px;
 
 /*Footer Style*/
 
+footer {
+  background-color: #FFFFFF;
+}
+
 footer p {
   font-size: 1rem;
   color: black;
   font-weight: 100;
-  padding-top: 5px;
+  padding: 5px;
+  margin-left: 10px;
 }
