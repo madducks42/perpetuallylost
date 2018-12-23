@@ -165,7 +165,7 @@ nav li {
 /* Landing Style */
 
 .landingimage {
-  background-image: url("../Images/Home/bonsairock1.jpg");
+  background-image: url("../Images/Home/bonsairock_landing.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -198,18 +198,6 @@ nav li {
   height: auto;
   padding: 32px 24px;
   margin: 0 auto;
-}
-
-.bannerimage {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-image: url("../Images/Home/bonsairock1.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 750px;
-  margin-bottom: 32px;
 }
 
 .bannercontent {
@@ -264,22 +252,19 @@ nav li {
 .blogpost {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 20rem;
-  height: auto;
+  width: 320px;
+  height: 320px;
   margin: 10px;
   background-color: #FFFFFF;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .bloginfo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 90%;
+  width: 300px;
   height: auto;
-  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bloginfo h3 {
@@ -292,10 +277,9 @@ nav li {
 }
 
 .bloginfo img {
-  width: 100%;
-  height: 12rem;
-  justify-content: center;
-  margin: auto;
+  width: 300px;
+  height: 200px;
+  padding-left: 2px;
 }
 
 .bloginfo p {
