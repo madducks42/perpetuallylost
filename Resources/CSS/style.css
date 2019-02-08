@@ -88,6 +88,12 @@ li {
   display: flex;
 }
 
+.gridcontainer {
+  display: grid;
+  grid-template: repeat(50px 50px 50px) / repeat(50px 50px 50px);
+  grid-gap: 10px;
+}
+
 .image-container {
   overflow: hidden;
 }
