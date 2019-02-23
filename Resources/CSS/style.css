@@ -2,7 +2,7 @@
 
 /* Color Scheme
 
-Main Background Color - #878F92
+Main Background Color - #D1D2D5
 Blog Post Background Color - Light Grey - #F0EFF0
 Flexbox - White - #FFFFFF
 
@@ -320,7 +320,7 @@ padding-top: 10px;
 }
 
 #drake {
-  background-color: #878F92;
+  background-color: #D1D2D5;
 }
 
 .galleryinfo {
@@ -358,7 +358,7 @@ padding-top: 10px;
 /* Banner Style */
 
 #banner {
-  background-color: #878F92;
+  background-color: #D1D2D5;
   padding-top: 80px;
   padding-bottom: 32px;
 }
@@ -413,7 +413,7 @@ padding-top: 10px;
 /* Prints Style */
 
 #prints {
-background-color: #878F92;
+background-color: #D1D2D5;
 width: 100%;
 height: auto;
 }
@@ -439,7 +439,7 @@ justify-content: flex-start;
 width: 20rem;
 height: auto;
 margin: 10px;
-background-color: #878F92;
+background-color: #D1D2D5;
 justify-content: center;
 align-items: center;
 }
