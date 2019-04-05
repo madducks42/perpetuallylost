@@ -337,18 +337,16 @@ padding-top: 10px;
 }
 
 .lightbox-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: inline-block;
   width: auto;
   height: auto;
   padding: 2px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .galleryimage {
-  width: 22rem;
-  height: 15rem;
+  width: 325px;
+  height: 225px;
   border-radius: 4px;
   padding: 1px;
 }
@@ -422,53 +420,50 @@ text-align: center;
 }
 
 #prints .flexcontainer {
-justify-content: center;
-flex-direction: row;
-flex-wrap: wrap;
-width: 100%;
-height: auto;
-padding-bottom: 32px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding-bottom: 32px;
+  margin-top: 30px;
 }
 
 .printspost {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-width: 20rem;
-height: auto;
-margin: 10px;
-background-color: #D1D2D5;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  margin: 10px;
+  background-color: #FFFFFF;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .printsinfo {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-width: 90%;
-height: auto;
-padding: 5px;
+  width: 300px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .printsinfo h3 {
-font-size: 1.5rem;
-font-weight: 700;
-text-align: center;
-padding-bottom: 10px;
-padding-top: 10px;
-text-decoration: underline;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-decoration: underline;
 }
 
 .printsinfo img {
-width: 100%;
-height: 12rem;
-justify-content: center;
-margin: auto;
+  width: 300px;
+  height: 200px;
+  padding: 2px;
 }
 
 .printsinfo p {
-padding-top: 10px;
+padding: 10px
 }
 
 /*Footer Style*/
