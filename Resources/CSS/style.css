@@ -52,23 +52,29 @@ h3 {
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: black;
   font-family: Papyrus;
   text-shadow: 1px 1px 1px #FFFFFF;
   line-height: 1.4;
+  text-decoration: underline;
+  text-decoration-style: dashed;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: black;
   font-family: Papyrus;
+  text-decoration: underline;
+  text-decoration-style: dotted;
 }
 
 p {
   font-size: 1rem;
   color: black;
   font-weight: 100;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.2;
 }
 
 ul {
@@ -82,6 +88,11 @@ li {
   font-weight: 50;
   padding-top: 2px;
   padding-bottom: 2px;
+  font-size: 1rem;
+  color: black;
+  font-weight: 100;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.2;
 }
 
 .flexcontainer {
@@ -252,20 +263,20 @@ nav li {
   margin-left: 20px;
 }
 
-  /* Blog Style */
+  /* Trips Style */
 
-#blog {
+#trips {
   background-color: #D1D2D5;
   width: 100%;
   height: auto;
 }
 
-#blog h1 {
+#trips h1 {
   padding-top: 20px;
   text-align: center;
 }
 
-#blog .flexcontainer {
+#trips .flexcontainer {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -274,7 +285,7 @@ nav li {
   padding-bottom: 32px;
 }
 
-.blogpost {
+.tripspost {
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -285,14 +296,14 @@ nav li {
   flex-wrap: wrap;
 }
 
-.bloginfo {
+.tripsinfo {
   width: 300px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-.bloginfo h3 {
+.tripsinfo h3 {
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
@@ -301,13 +312,13 @@ nav li {
   text-decoration: underline;
 }
 
-.bloginfo img {
+.tripsinfo img {
   width: 300px;
   height: 200px;
   padding-left: 2px;
 }
 
-.bloginfo p {
+.tripsinfo p {
 padding-top: 10px;
 }
 
@@ -328,7 +339,6 @@ padding-top: 10px;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-
 }
 
 .galleryinfo h1 {
@@ -351,35 +361,40 @@ padding-top: 10px;
   padding: 1px;
 }
 
-/* Banner Style */
+/* Blog Style */
 
-#banner {
+#blog {
   background-color: #D1D2D5;
   padding-top: 80px;
   padding-bottom: 32px;
+  border-bottom: 10px solid black;
 }
 
-.banner-leftside {
-  width: 45%;
+#blog.flexcontainer {
+  width: 100%;
+}
+
+.blog-leftside {
+  width: 30%;
   height: auto;
   padding: 20px;
   vertical-align: middle;
 }
 
-.banner-leftside img {
+.blog-leftside img {
   width: 100%;
   height: auto;
   border:1px solid #021a40;
 }
 
-.banner-rightside {
-  width: 40%;
+.blog-rightside {
+  width: 70%;
   height: auto;
   padding: 32px 24px;
   margin: 0 auto;
 }
 
-.bannercontent {
+.blogcontent {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -387,21 +402,21 @@ padding-top: 10px;
   padding: 5px;
 }
 
-.bannercontent h4 p {
+.blogcontent h4 p {
   color: black;
 }
 
-.bannercontent, .home h4 {
+.blogcontent, .home h4 {
   padding: 0px 15px 0px 15px;
   color: black;
 }
 
-.bannercontent, .home p {
+.blogcontent, .home p {
   padding: 0px 15px 10px 15px;
   color: black;
 }
 
-.bannercontent a:hover {
+.blogcontent a:hover {
   color: #1E1F26;
   font-weight: 400;
 }
