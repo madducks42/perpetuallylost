@@ -484,7 +484,8 @@ padding: 10px
 /*Footer Style*/
 
 footer {
-  background-color: #FFFFFF;
+  background-color: #D1D2D5;
+  border-top: 1px solid Black;
 }
 
 footer p {
