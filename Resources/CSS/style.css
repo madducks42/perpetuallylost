@@ -257,6 +257,7 @@ nav li {
   width: 20%;
   padding: 20px 20px;
   background-color: #D1D2D5;
+  border:1px solid black;
   margin-top: 30px;
   margin-right: 80px;
   margin-bottom: 30px;
@@ -283,6 +284,7 @@ nav li {
   width: 100%;
   height: auto;
   padding-bottom: 32px;
+
 }
 
 .tripspost {
@@ -294,6 +296,7 @@ nav li {
   background-color: #FFFFFF;
   justify-content: center;
   flex-wrap: wrap;
+  border-radius: 20px;
 }
 
 .tripsinfo {
@@ -322,15 +325,33 @@ nav li {
 padding-top: 10px;
 }
 
-/*Lightbox Gallery Style*/
+/*Lightbox Color Backgrounds*/
 
 #arenal {
-  background-color: #FFFFFF;
+  background-color: #D1D2D5;
 }
 
 #drake {
+  background-color: #FFFFFF;
+}
+
+#adirondacks {
   background-color: #D1D2D5;
 }
+
+#tahoe {
+  background-color: #D1D2D5;
+}
+
+#summer_acadia {
+  background-color: #D1D2D5;
+}
+
+#winter_acadia {
+  background-color: #FFFFFF;
+}
+
+/*Lightbox Gallery Style*/
 
 .galleryinfo {
   display: flex;
@@ -367,7 +388,7 @@ padding-top: 10px;
   background-color: #D1D2D5;
   padding-top: 80px;
   padding-bottom: 32px;
-  border-bottom: 10px solid black;
+
 }
 
 #blog.flexcontainer {
@@ -419,6 +440,30 @@ padding-top: 10px;
 .blogcontent a:hover {
   color: #1E1F26;
   font-weight: 400;
+}
+
+/* Photo Tips Style */
+
+#phototips {
+background-color: #FFFFFF;
+padding-top: 20px;
+padding-bottom: 32px;
+border: 3px solid black;
+justify-content: center;
+}
+
+#phototips h1 {
+  text-align: center;
+}
+
+.phototips-main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: 100%;
+  height: 150px;
+
 }
 
 /* Prints Style */
@@ -484,8 +529,9 @@ padding: 10px
 /*Footer Style*/
 
 footer {
-  background-color: #D1D2D5;
+  background-color: #FFFFFF;
   border-top: 1px solid Black;
+  height: 20px;
 }
 
 footer p {
