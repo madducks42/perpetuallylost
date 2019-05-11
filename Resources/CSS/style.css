@@ -255,37 +255,6 @@ align-items: center;
 
 }
 
-
-/* .aboutme-left {
-  width: 20%;
-  min-width: 200px;
-  height: auto;
-  padding-left: 20px;
-}
-
-.aboutme-left img {
-  width: 100%;
-  height: auto;
-  max-height: 650px;
-  max-width: 50px;
-  min-height: 450px;
-  min-width: 100px;
-  border:1px solid black;
-} */
-
-/* .aboutme-middle {
-  width: 60%;
-  min-width: 100px;
-  height: auto;
-  text-align: justify;
-
-}
-
-.aboutme-content h4 p {
-  color: black;
-} */
-
-
   /* Trips Style */
 
 #trips {
@@ -359,6 +328,14 @@ padding-top: 10px;
 }
 
 #adirondacks {
+  background-color: #D1D2D5;
+}
+
+#glencanyon {
+  background-color: #D1D2D5;
+}
+
+#southrim {
   background-color: #D1D2D5;
 }
 
@@ -457,10 +434,12 @@ padding-top: 10px;
 
 #phototips {
 background-color: #FFFFFF;
-padding-top: 20px;
-padding-bottom: 32px;
+padding-top: 30px;
+padding-bottom: 30px;
 border: 3px solid black;
 justify-content: center;
+width: 100%;
+height: auto;
 }
 
 #phototips h1 {
@@ -468,27 +447,52 @@ justify-content: center;
   text-shadow: 2px 2px 2px #D1D2D5;
 }
 
-.phototips-main {
+.phototips-flex {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-content: space-around;
   width: 100%;
-  height: 150px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 
+.phototips-flex ul:first-child {
+  width: 40%;
+  padding-left: 80px;
+}
+
+.phototips-flex ul:nth-child(2){
+  width: 40%;
+  padding-right: 80px;
 }
 
 /* Prints Style */
 
 #prints {
-background-color: #D1D2D5;
-width: 100%;
-height: auto;
+  background-color: #D1D2D5;
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+}
+
+#magnets {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+}
+
+#prints h2 {
+  padding-top: 20px;
+  text-align: center;
 }
 
 #prints h3 {
-padding-top: 20px;
-text-align: center;
+  padding-top: 20px;
+  text-align: center;
 }
 
 #prints .flexcontainer {
@@ -505,7 +509,7 @@ text-align: center;
   display: flex;
   flex-direction: column;
   width: 350px;
-  height: 400px;
+  height: 600px;
   margin: 10px;
   background-color: #FFFFFF;
   justify-content: center;
@@ -514,7 +518,7 @@ text-align: center;
 
 .printsinfo {
   width: 300px;
-  height: 400px;
+  height: 500px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -537,6 +541,32 @@ text-align: center;
 .printsinfo p {
 padding: 10px
 }
+
+#magnets {
+  background-color: #D1D2D5;
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+}
+
+#magnets h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#magnets h3 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#magnets .flexcontainer {
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding-bottom: 32px;
+  margin-top: 30px;
 
 /*Footer Style*/
 
