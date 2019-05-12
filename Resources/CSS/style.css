@@ -415,14 +415,14 @@ padding-top: 10px;
   padding: 5px;
 }
 
-.blogcontent h4, p {
+.blogcontent h4, p, ul, li {
   color: black;
 
 }
 
-.blogcontent h5, ul, li {
+.blogcontent h5 {
   color: black;
-
+  padding-bottom: 10px;
 }
 
 .blogcontent a:hover {
