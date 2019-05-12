@@ -319,41 +319,41 @@ padding-top: 10px;
 
 /*Lightbox Color Backgrounds*/
 
-#arenal {
-  background-color: #D1D2D5;
+/* #arenal {
+  background-color: #FFFFFF;
 }
 
 #drake {
-  background-color: #FFFFFF;
+  background-color: #D1D2D5;
 }
 
 #adirondacks {
-  background-color: #D1D2D5;
-}
-
-#glencanyon {
-  background-color: #D1D2D5;
-}
-
-#southrim {
-  background-color: #D1D2D5;
-}
-
-#tahoe {
-  background-color: #D1D2D5;
-}
-
-#summer_acadia {
-  background-color: #D1D2D5;
-}
-
-#winter_acadia {
   background-color: #FFFFFF;
 }
 
-#zion {
+#glencanyon {
+  background-color: #FFFFFF;
+}
+
+#southrim {
+  background-color: #FFFFFF;
+}
+
+#tahoe {
+  background-color: #FFFFFF;
+}
+
+#summer_acadia {
+  background-color: #FFFFFF;
+}
+
+#winter_acadia {
   background-color: #D1D2D5;
 }
+
+#zion {
+  background-color: #FFFFFF;
+} */
 
 /*Lightbox Gallery Style*/
 
@@ -430,45 +430,6 @@ padding-top: 10px;
   font-weight: 400;
 }
 
-/* Photo Tips Style */
-
-#phototips {
-background-color: #FFFFFF;
-padding-top: 30px;
-padding-bottom: 30px;
-border: 3px solid black;
-justify-content: center;
-width: 100%;
-height: auto;
-}
-
-#phototips h1 {
-  text-align: center;
-  text-shadow: 2px 2px 2px #D1D2D5;
-}
-
-.phototips-flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
-  width: 100%;
-  height: auto;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.phototips-flex ul:first-child {
-  width: 40%;
-  padding-left: 80px;
-}
-
-.phototips-flex ul:nth-child(2){
-  width: 40%;
-  padding-right: 80px;
-}
-
 /* Prints Style */
 
 #prints {
@@ -489,24 +450,25 @@ height: auto;
 }
 
 #prints .flexcontainer {
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  padding-bottom: 32px;
+  padding-bottom: 5px;
   margin-top: 30px;
 }
 
-.printspost {
+#prints .printspost {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: 500px;
-  margin: 10px;
+  width: 450px;
+  height: 600px;
+  margin-bottom: 20px;
   background-color: #FFFFFF;
   justify-content: center;
   flex-wrap: wrap;
+  border-radius: 10px;
 }
 
 .printsinfo {
@@ -522,13 +484,12 @@ height: auto;
   font-weight: 700;
   text-align: center;
   padding-bottom: 10px;
-  padding-top: 10px;
   text-decoration: underline;
 }
 
 .printsinfo img {
-  width: 300px;
-  height: 200px;
+  width: auto;
+  height: 250px;
   padding: 2px;
 }
 
@@ -540,11 +501,23 @@ padding: 10px 50px;
   background-color: #D1D2D5;
   width: 100%;
   height: auto;
-  padding-top: 30px;
+  padding-top: 10px;
+}
+
+#magnets .printspost {
+  display: flex;
+  flex-direction: column;
+  width: 425px;
+  height: 525px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
 }
 
 #magnets h2 {
-  padding-top: 20px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -554,20 +527,21 @@ padding: 10px 50px;
 }
 
 #magnets .flexcontainer {
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
   padding-bottom: 32px;
   margin-top: 30px;
+}
 
 /*Footer Style*/
 
 footer {
-  background-color: #FFFFFF;
+  background-color: #D1D2D5;
   border-top: 1px solid Black;
-  height: 20px;
+  height: 30px;
 }
 
 footer p {
