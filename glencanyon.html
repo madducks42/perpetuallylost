@@ -5,118 +5,88 @@
     <title>Perpetually Lost Photography</title>
     <link href="Resources/CSS/reset.css" type="text/css" rel="stylesheet">
     <link href="Resources/CSS/style.css" type="text/css" rel="stylesheet">
-    <link href="Resources/CSS/lightbox.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,500i,900" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <script type="text/javascript" src="Resources/Scripts/lightbox.js"></script>
-
   </head>
 
-<!-- Start of Body Content -->
-
   <body>
+    <!-- Using CSS Grid For Layout -->
+    <div class="blog_grid">
 
-  <!-- Header Content -->
-
-  <header>
-    <div class="image-container logo-small">
-      <img src="Resources/Icons/logo-small.jpg">
-    </div>
-    <div class="image-container logo-big">
-      <img src="Resources/Icons/logo-big.jpg">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#trips">Trips</a></li>
-        <li><a href="prints.html">Available Prints</a></li>
-        <li><a href="mailto:perpetuallylostphotography@gmail.com">Contact Me</a></li>
-      </ul>
-    </nav>
-  </header>
-
-    <!-- End Header Content -->
-
-    <!-- Start Main Content -->
-
-    <main>
-
-    <!-- Start Blog Content -->
-
-      <section id="blog" class="blog-flex">
-        <div class="blog-leftside">
-          <img src="Resources/Images/GlenCanyon/glencanyon_cover.jpg" alt "Antelope Canyon"/>
+      <!-- Header Section -->
+      <div class="header">
+        <div class="image-container logo">
+          <img src="Resources/Icons/logo-big.jpg">
         </div>
-        <div class="blog-rightside">
-          <div class="blogcontent">
-            <h4>Glen Canyon - April 2019</h4>
-            <p>One of the challenges to planning out the Grand Circle trip was that we only had eight days so we really had to plan for places that were along the way. Glen Canyon fit the bill because it was good place to stop between Zion and the south rim, and was central to a lot of cool stuff like Antelope Canyon and Grand Staircase-Escalante Monument. We stayed at Lake Powell Resort and Marina which has an incredible view of the lake. It's also a prime house boating spot if that's your thing. </p>
-          </br>
-            <h5>Lake Powell</h5>
-            <ul>
-              <li>Lake Powell is very popular during the summer, as mentioned above it's a very popular place for house boating. If you'd like to stay somewhere more interesting there are usually houseboats for rent as long as it's in season.</li>
-              <li>We stayed at Lake Powell Resorts and Marinas which is one of, if not the only, place to stay that's on the water. Overall it's a pretty nice place but the food options aren't so great (which is a common complaint in reviews). If the place is even remotely busy around dinner time you likely won't get a table.</li>
-              <li>Page, Az is a short-drive away and offers more places to stay and eat but doesn't offer any nice views.</li>
-              <li>Make sure to do a float down Lake Powell! The lake is the best part of this area and boating trips are a great way to get some amazing views of the canyon and learn about the area. If you have the time I'd recommend one of the full day trips.</li>
-            </ul>
-          </br>
-            <h5>Antelope Canyon</h5>
-            <ul>
-              <li>This area is crazy busy. It's also on private land and only accessible via a guide so be sure to book a tour ahead of time especially if it's for a photography tour. The photography tours are more limited so they fill up faster. </li>
-              <li>It's definitely worth doing a longer tour that includes other canyons in the area besides Upper & Lower Canyon. They're cool to see and if you're doing a photography tour it will give you a chance to practice shooting in the area before getting to the more crowded canyons. </li>
-              <li>The two main canyons, Upper & Lower Antelope Canyon, are often very crowded. The canyons are very narrow in spots so you tend to notice the crowds here more so than you would at other popular Grand Circle locations. If you're doing a photography tour you'll have a very short amount of time to get your shots and you'll often have to shoot over people's heads.</li>
-              <li>This was probably the dustiest stop on our Grand Circle trip. Be sure to take good care of your camera equipment and try to avoid changing lenses on any tours.</li>
-            </ul>
-          </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#trips">Trips</a></li>
+            <li><a href="prints.html">Available Prints</a></li>
+            <li><a href="mailto:perpetuallylostphotography@gmail.com">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Start Blog Content -->
+      <div class="blog_image">
+        <img src="Resources/Images/GlenCanyon/glencanyon_cover.jpg" alt "Antelope Canyon"/>
+      </div>
+
+      <div class="blog_intro">
+        <h4>Glen Canyon - April 2019</h4>
+        <p>One of the challenges to planning out the Grand Circle trip was that we only had eight days so we really had to plan for places that were along the way. Glen Canyon fit the bill because it was good place to stop between Zion and the south rim, and was central to a lot of cool stuff like Antelope Canyon and Grand Staircase-Escalante Monument. We stayed at Lake Powell Resort and Marina which has an incredible view of the lake. It's also a prime house boating spot if that's your thing. </p>
+      </div>
+      <div class = "blog_tips">
+        <h5>Lake Powell</h5>
+        <ul>
+          <li>Lake Powell is very popular during the summer, as mentioned above it's a very popular place for house boating. If you'd like to stay somewhere more interesting there are usually houseboats for rent as long as it's in season.</li>
+          <li>We stayed at Lake Powell Resorts and Marinas which is one of, if not the only, place to stay that's on the water. Overall it's a pretty nice place but the food options aren't so great (which is a common complaint in reviews). If the place is even remotely busy around dinner time you likely won't get a table.</li>
+          <li>Page, Az is a short-drive away and offers more places to stay and eat but doesn't offer any nice views.</li>
+          <li>Make sure to do a float down Lake Powell! The lake is the best part of this area and boating trips are a great way to get some amazing views of the canyon and learn about the area. If you have the time I'd recommend one of the full day trips.</li>
+        </ul>
+      </br>
+        <h5>Antelope Canyon</h5>
+        <ul>
+          <li>This area is crazy busy. It's also on private land and only accessible via a guide so be sure to book a tour ahead of time especially if it's for a photography tour. The photography tours are more limited so they fill up faster. </li>
+          <li>It's definitely worth doing a longer tour that includes other canyons in the area besides Upper & Lower Canyon. They're cool to see and if you're doing a photography tour it will give you a chance to practice shooting in the area before getting to the more crowded canyons. </li>
+          <li>The two main canyons, Upper & Lower Antelope Canyon, are often very crowded. The canyons are very narrow in spots so you tend to notice the crowds here more so than you would at other popular Grand Circle locations. If you're doing a photography tour you'll have a very short amount of time to get your shots and you'll often have to shoot over people's heads.</li>
+          <li>This was probably the dustiest stop on our Grand Circle trip. Be sure to take good care of your camera equipment and try to avoid changing lenses on any tours.</li>
+        </ul>
+      </div>
+
+      <div class="blog_gallery">
+        <div class="galleryinfo">
+          <h2>Glen Canyon</h2>
         </div>
-      </section>
-
-    <!-- End Blog Section -->
-
-    <!-- Start Photo Gallery -->
-
-    <!-- Start Glen Canyon Gallery -->
-
-    <section id="glencanyon">
-      <div class="galleryinfo">
-        <h2>Glen Canyon</h2>
-      </div>
-      <div class="lightbox-container">
-        <a href="Resources/Images/GlenCanyon/Glen/Lightroom/lakepowellresort_1.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
-          <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/lakepowellresort_thumbnail_1.jpg" alt "Image of Glen Canyon"/>
-        </a>
-        <a href="Resources/Images/GlenCanyon/Glen/Lightroom/lakepowellresort_2.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
-          <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/lakepowellresort_thumbnail_2.jpg" alt "Image of Glen Canyon"/>
-        </a>
-        <a href="Resources/Images/GlenCanyon/Glen/Lightroom/glencanyon_1.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
-          <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/glencanyon_thumbnail_1.jpg" alt "Image of Glen Canyon"/>
-        </a>
-        <a href="Resources/Images/GlenCanyon/Glen/Lightroom/glencanyon_2.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
-          <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/glencanyon_thumbnail_2.jpg" alt "Image of Glen Canyon"/>
-        </a>
-        <a href="Resources/Images/GlenCanyon/Glen/Lightroom/glencanyon_3.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
-          <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/glencanyon_thumbnail_3.jpg" alt "Image of Glen Canyon"/>
-        </a>
-        <a href="Resources/Images/GlenCanyon/Glen/Lightroom/glencanyon_4.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
-          <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/glencanyon_thumbnail_4.jpg" alt "Image of Glen Canyon"/>
-        </a>
-        <a href="Resources/Images/GlenCanyon/Glen/Lightroom/glencanyon_5.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
-          <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/glencanyon_thumbnail_5.jpg" alt "Image of Glen Canyon"/>
-        </a>
-        <a href="Resources/Images/GlenCanyon/Glen/Lightroom/horseshoe_1.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
-          <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/horseshoe_thumbnail_1.jpg" alt "Image of Glen Canyon"/>
-        </a>
-        <a href="Resources/Images/GlenCanyon/Glen/Lightroom/horseshoe_2.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
-          <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/horseshoe_thumbnail_2.jpg" alt "Image of Glen Canyon"/>
-        </a>
-      </div>
-    </div>
-  </section>
-
-      <!-- End Glen Canyon Gallery -->
-
-      <!-- Start Antelope Canyon Gallery -->
-      <section id="antelope">
+        <div class="lightbox-container">
+          <a href="Resources/Images/GlenCanyon/Glen/Lightroom/lakepowellresort_1.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
+            <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/lakepowellresort_thumbnail_1.jpg" alt "Image of Glen Canyon"/>
+          </a>
+          <a href="Resources/Images/GlenCanyon/Glen/Lightroom/lakepowellresort_2.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
+            <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/lakepowellresort_thumbnail_2.jpg" alt "Image of Glen Canyon"/>
+          </a>
+          <a href="Resources/Images/GlenCanyon/Glen/Lightroom/glencanyon_1.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
+            <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/glencanyon_thumbnail_1.jpg" alt "Image of Glen Canyon"/>
+          </a>
+          <a href="Resources/Images/GlenCanyon/Glen/Lightroom/glencanyon_2.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
+            <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/glencanyon_thumbnail_2.jpg" alt "Image of Glen Canyon"/>
+          </a>
+          <a href="Resources/Images/GlenCanyon/Glen/Lightroom/glencanyon_3.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
+            <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/glencanyon_thumbnail_3.jpg" alt "Image of Glen Canyon"/>
+          </a>
+          <a href="Resources/Images/GlenCanyon/Glen/Lightroom/glencanyon_4.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
+            <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/glencanyon_thumbnail_4.jpg" alt "Image of Glen Canyon"/>
+          </a>
+          <a href="Resources/Images/GlenCanyon/Glen/Lightroom/glencanyon_5.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
+            <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/glencanyon_thumbnail_5.jpg" alt "Image of Glen Canyon"/>
+          </a>
+          <a href="Resources/Images/GlenCanyon/Glen/Lightroom/horseshoe_1.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
+            <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/horseshoe_thumbnail_1.jpg" alt "Image of Glen Canyon"/>
+          </a>
+          <a href="Resources/Images/GlenCanyon/Glen/Lightroom/horseshoe_2.jpg" data-lightbox="glencanyon" data-title="Glen Canyon.">
+            <img class ="galleryimage" src="Resources/Images/GlenCanyon/Glen/Thumbnails/horseshoe_thumbnail_2.jpg" alt "Image of Glen Canyon"/>
+          </a>
+        </div>
         <div class="galleryinfo">
           <h2>Antelope Canyon</h2>
         </div>
@@ -171,16 +141,11 @@
           </a>
         </div>
       </div>
-    </section>
 
-    <!-- End Arenal Volcano Gallery -->
+      <footer>
+          <p>&copy; Perpetually Lost Photography All Rights Reserved</p>
+      </footer>
 
-    <!-- End Photo Gallery-->
-
-    <!-- Footer Content -->
-    <footer>
-      <p>&copy; Perpetually Lost Photography All Rights Reserved</p>
-    </footer>
-
+    </div>
   </body>
 </html>

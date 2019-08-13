@@ -5,164 +5,137 @@
     <title>Perpetually Lost Photography</title>
     <link href="Resources/CSS/reset.css" type="text/css" rel="stylesheet">
     <link href="Resources/CSS/style.css" type="text/css" rel="stylesheet">
-    <link href="Resources/CSS/lightbox.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,500i,900" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <script type="text/javascript" src="Resources/Scripts/lightbox.js"></script>
-
   </head>
 
-<!-- Start of Body Content -->
-
   <body>
+    <!-- Using CSS Grid For Layout -->
+    <div class="blog_grid">
 
-  <!-- Header Content -->
-
-  <header>
-    <div class="image-container logo-small">
-      <img src="Resources/Icons/logo-small.jpg">
-    </div>
-    <div class="image-container logo-big">
-      <img src="Resources/Icons/logo-big.jpg">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#trips">Trips</a></li>
-        <li><a href="prints.html">Available Prints</a></li>
-        <li><a href="mailto:perpetuallylostphotography@gmail.com">Contact Me</a></li>
-      </ul>
-    </nav>
-  </header>
-
-    <!-- End Header Content -->
-
-    <!-- Start Main Content -->
-
-    <main>
-
-    <!-- Start Blog Content -->
-
-      <section id="blog" class="flexcontainer">
-        <div class="blog-leftside">
-          <img src="Resources/Images/Zion/zion_banner.jpg" alt "Zion National Park"/>
+      <!-- Header Section -->
+      <div class="header">
+        <div class="image-container logo">
+          <img src="Resources/Icons/logo-big.jpg">
         </div>
-        <div class="blog-rightside">
-          <div class="blogcontent">
-            <h4>Zion National Park - April 2019</h4>
-            <p>After deciding on a whim to do a Grand Circle trip I started doing some research about which parks we should prioritize on the trip. Literally every person I asked who had done a similar trip said Zion was a must see. Quite a few people even said they preferred it over the Grand Canyon! After seeing Zion National Park for myself I can see why. Part of what sets Zion apart from the other parks, at least to me, was how green it was. This park gets more rainfall than most of the other parks in the Grand Circle area so there is a lot more vegetation. This results in a dramatic landscape of bright green framed by epic canyon walls and a wide open blue sky. It's easily one of the most beautiful places I've ever been to.</p>
-          </br>
-            <h5>Tips For Visiting The Park</h5>
-            <ul>
-              <li>Zion has become an <strong>extremely</strong> popular park. This means it's basically always crowded but even more so during the spring and summer. To help with crowd control there is limited driving allowed in the park but their shuttle system works great.</li>
-              <li> We stayed at Zion Lodge which is located inside the park. The benefits of staying here is that you can just walk out of your room in the morning and hit the trails without having to wait in line to get into the park. The downside is food options are limited and you do need to book far in advance. I booked almost a year in advance.</li>
-              <li>Staying outside of the park means more lodging and restaurant options. But driving into the park is challenging. There isn't much parking and if you wait until late morning to enter the park you'll likely face long lines. There are shuttles that run from the small town outside Zion into the park and these are your best bet.</li>
-              <li>Book a jeep tour! We booked ours through <a href="https://www.zionjeeptours.com" target="_blank">Zion Jeep Tours</a> and had a blast. These take place outside the park but they'll give you some amazing views of the area that you otherwise wouldn't see.</li>
-              <li>Do some research before deciding on dates for your trip. Summer is not only the busiest time of year but it also gets very hot during the day. Spring and fall are slightly less busy but some of the trails may be closed, particularly in the spring. And during winter a lot of trails will be closed but the park will be less crowded.</li>
-              <li>Make sure to give yourself enough time to enjoy the park as well, I'd recommend at least three days. Bryce Canyon is close to Zion so staying a week in the area so you could check out both areas is a good idea.</li>
-            </ul>
-          </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#trips">Trips</a></li>
+            <li><a href="prints.html">Available Prints</a></li>
+            <li><a href="mailto:perpetuallylostphotography@gmail.com">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Start Blog Content -->
+      <div class="blog_image">
+        <img src="Resources/Images/Zion/zion_banner.jpg" alt "Zion National Park"/>
+      </div>
+
+      <div class="blog_intro">
+        <h4>Zion National Park - April 2019</h4>
+        <p>After deciding on a whim to do a Grand Circle trip I started doing some research about which parks we should prioritize on the trip. Literally every person I asked who had done a similar trip said Zion was a must see. Quite a few people even said they preferred it over the Grand Canyon! After seeing Zion National Park for myself I can see why. Part of what sets Zion apart from the other parks, at least to me, was how green it was. This park gets more rainfall than most of the other parks in the Grand Circle area so there is a lot more vegetation. This results in a dramatic landscape of bright green framed by epic canyon walls and a wide open blue sky. It's easily one of the most beautiful places I've ever been to.</p>
+      </div>
+
+      <div class = "blog_tips">
+        <h5>Tips For Visiting The Park</h5>
+        <ul>
+          <li>Zion has become an <strong>extremely</strong> popular park. This means it's basically always crowded but even more so during the spring and summer. To help with crowd control there is limited driving allowed in the park but their shuttle system works great.</li>
+          <li> We stayed at Zion Lodge which is located inside the park. The benefits of staying here is that you can just walk out of your room in the morning and hit the trails without having to wait in line to get into the park. The downside is food options are limited and you do need to book far in advance. I booked almost a year in advance.</li>
+          <li>Staying outside of the park means more lodging and restaurant options. But driving into the park is challenging. There isn't much parking and if you wait until late morning to enter the park you'll likely face long lines. There are shuttles that run from the small town outside Zion into the park and these are your best bet.</li>
+          <li>Book a jeep tour! We booked ours through <a href="https://www.zionjeeptours.com" target="_blank">Zion Jeep Tours</a> and had a blast. These take place outside the park but they'll give you some amazing views of the area that you otherwise wouldn't see.</li>
+          <li>Do some research before deciding on dates for your trip. Summer is not only the busiest time of year but it also gets very hot during the day. Spring and fall are slightly less busy but some of the trails may be closed, particularly in the spring. And during winter a lot of trails will be closed but the park will be less crowded.</li>
+          <li>Make sure to give yourself enough time to enjoy the park as well, I'd recommend at least three days. Bryce Canyon is close to Zion so staying a week in the area so you could check out both areas is a good idea.</li>
+        </ul>
+      </div>
+
+      <div class="blog_gallery">
+        <div class="galleryinfo">
+          <h2>Zion National Park</h2>
         </div>
-      </section>
-
-    <!-- End Blog Section -->
-
-
-    <!-- Start Photo Gallery -->
-
-    <!-- Start Zion Gallery -->
-
-    <section id="zion">
-      <div class="galleryinfo">
-        <h2>Zion National Park</h2>
+        <div class="lightbox-container">
+          <a href="Resources/Images/Zion/Lightbox/zion_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_thumbnail_1.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_2.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_thumbnail_2.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_3.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_thumbnail_3.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_4.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_thumbnail_4.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_5.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_thumbnail_5.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_1.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_2.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_2.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_3.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_3.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_4.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_4.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_5.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_5.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_6.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_6.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_7.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_7.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_8.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_8.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_9.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_9.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_10.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_10.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_bridge_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_bridge_thumbnail_1.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_cows_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_cows_thumbnail_1.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_deer_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_deer_thumbnail_1.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_deer_2.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_deer_thumbnail_2.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_flowers_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_flowers_thumbnail_1.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_overlook_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_overlook_thumbnail_1.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_river_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_river_thumbnail_1.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_river_2.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_river_thumbnail_2.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_river_3.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_river_thumbnail_3.jpg" alt "Image of Zion National Park"/>
+          </a>
+          <a href="Resources/Images/Zion/Lightbox/zion_squirrel_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
+            <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_squirrel_thumbnail_1.jpg" alt "Image of Zion National Park"/>
+          </a>
+        </div>
       </div>
-      <div class="lightbox-container">
-        <a href="Resources/Images/Zion/Lightbox/zion_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_thumbnail_1.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_2.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_thumbnail_2.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_3.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_thumbnail_3.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_4.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_thumbnail_4.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_5.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_thumbnail_5.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_1.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_2.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_2.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_3.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_3.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_4.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_4.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_5.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_5.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_6.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_6.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_7.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_7.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_8.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_8.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_9.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_9.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_angelslanding_10.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_angelslanding_thumbnail_10.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_bridge_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_bridge_thumbnail_1.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_cows_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_cows_thumbnail_1.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_deer_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_deer_thumbnail_1.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_deer_2.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_deer_thumbnail_2.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_flowers_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_flowers_thumbnail_1.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_overlook_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_overlook_thumbnail_1.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_river_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_river_thumbnail_1.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_river_2.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_river_thumbnail_2.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_river_3.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_river_thumbnail_3.jpg" alt "Image of Zion National Park"/>
-        </a>
-        <a href="Resources/Images/Zion/Lightbox/zion_squirrel_1.jpg" data-lightbox="zion" data-title="Zion National Park.">
-          <img class ="galleryimage" src="Resources/Images/Zion/Thumbnails/zion_squirrel_thumbnail_1.jpg" alt "Image of Zion National Park"/>
-        </a>
-      </div>
-    </section>
 
-    <!-- End Arenal Volcano Gallery -->
+      <footer>
+          <p>&copy; Perpetually Lost Photography All Rights Reserved</p>
+      </footer>
 
-    <!-- End Photo Gallery-->
-
-    <!-- Footer Content -->
-    <footer>
-      <p>&copy; Perpetually Lost Photography All Rights Reserved</p>
-    </footer>
-
+    </div>
   </body>
 </html>
