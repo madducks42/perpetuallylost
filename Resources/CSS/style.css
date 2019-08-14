@@ -11,7 +11,15 @@ Flexbox - White - #FFFFFF
 
 html {
   font-size: 16px;
-  height: 100%;
+}
+
+  @media screen and (min-width: 900px) {
+    html {font-size: 18px;
+  }
+}
+  @media screen and (min-width: 1200px) {
+      html { font-size: 20px;
+  }
 }
 
 body {
@@ -76,7 +84,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: black;
   font-family: Papyrus;
   text-decoration: underline;
@@ -97,26 +105,131 @@ ul {
 }
 
 li {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.2;
   font-size: 1rem;
   color: black;
   font-weight: 50;
   padding-top: 2px;
   padding-bottom: 2px;
-  font-size: 1rem;
   color: black;
-  font-weight: 100;
-  font-family: Helvetica, sans-serif;
-  line-height: 1.2;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 1rem;
 }
 
 a:hover {
   text-decoration: underline;
 }
+
+
+/* Header Style */
+/****************/
+
+.header{
+  grid-area: header;
+  display: flex;
+  align-items: flex-end;
+  background-color: #FFFFFF;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  border-bottom: 10px solid black;
+}
+
+.logo {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.logo img{
+  height: 50px;
+  width: auto;
+}
+
+nav {
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 641px){
+    .header{
+      grid-area: header;
+      display: flex;
+      flex-direction: column;
+      background-color: #FFFFFF;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      border-bottom: 10px solid black;
+    }
+
+    .logo {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 5px;
+    }
+
+    .logo img{
+      height: auto;
+      width: 400px;
+    }
+
+    nav {
+      align-self: center;
+    }
+
+    nav li {
+      display: inline-block;
+      padding: 5px;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+    .header{
+      grid-area: header;
+      display: flex;
+      flex-direction: column;
+      background-color: #FFFFFF;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      border-bottom: 10px solid black;
+    }
+
+    .logo {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 5px;
+    }
+
+    .logo img{
+      height: auto;
+      width: 350px;
+    }
+
+    nav {
+      align-self: center;
+    }
+
+    nav li {
+      display: inline-block;
+      padding: 5px;
+    }
+}
+
 
 /* Home Layout Styles */
 /*****************/
@@ -272,114 +385,6 @@ a:hover {
 
 }
 
-/* Header Style */
-/****************/
-
-.header{
-  grid-area: header;
-  display: flex;
-  align-items: flex-end;
-  background-color: #FFFFFF;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  border-bottom: 10px solid black;
-}
-
-.logo {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 10px;
-
-}
-
-.logo img{
-  height: 50px;
-  width: auto;
-
-}
-
-nav {
-  align-self: flex-end;
-  padding-bottom: 10px;
-}
-
-nav li {
-  display: inline-block;
-  padding-right: 2rem;
-}
-
-@media screen and (max-width: 1024px) and (min-width: 641px){
-    .header{
-      grid-area: header;
-      display: flex;
-      flex-direction: column;
-      background-color: #FFFFFF;
-      align-items: center;
-      position: fixed;
-      width: 100%;
-      border-bottom: 10px solid black;
-    }
-
-    .logo {
-      padding-top: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 5px;
-    }
-
-    .logo img{
-      height: auto;
-      width: 400px;
-    }
-
-    nav {
-      align-self: center;
-    }
-
-    nav li {
-      display: inline-block;
-      padding: 5px;
-    }
-}
-
-@media screen and (max-width: 640px){
-
-    .header{
-      grid-area: header;
-      display: flex;
-      flex-direction: column;
-      background-color: #FFFFFF;
-      align-items: center;
-      position: fixed;
-      width: 100%;
-      border-bottom: 10px solid black;
-    }
-
-    .logo {
-      padding-top: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 5px;
-    }
-
-    .logo img{
-      height: auto;
-      width: 350px;
-    }
-
-    nav {
-      align-self: center;
-    }
-
-    nav li {
-      display: inline-block;
-      padding: 5px;
-      font-size: 14px;
-    }
-}
-
-
 /* Home Style */
 /**************/
 
@@ -399,18 +404,25 @@ nav li {
 
 .aboutme_content {
   grid-area: content;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
+  margin-left: 20px;
 }
 
 .aboutme_content h4 {
   padding-bottom: 5px;
 }
 
+.aboutme_content p {
+  text-align: justify;
+}
+
 .aboutme_updates {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 10px;
+  padding: 20px;
 }
 
 .profileimage {
@@ -422,15 +434,19 @@ nav li {
 }
 
 .profileimage img {
-  width: 80%;
+  width: 100%;
   height: auto;
   border: 1px solid black;
 }
 
 .socialmedia {
   grid-area: social;
-  text-align: center;
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px dotted black;
+  margin-bottom: 20px;
 }
 
 .socialmedia_icons {
@@ -474,24 +490,23 @@ padding-bottom: 32px;
 .tripspost {
 display: flex;
 flex-direction: column;
-width: 320px;
-height: 320px;
+width: 350px;
+height: 350px;
 margin: 10px;
 background-color: #FFFFFF;
 justify-content: center;
 flex-wrap: wrap;
-border-radius: 20px;
+border-radius: 10px;
 }
 
 .tripsinfo {
-width: 300px;
+width: 320px;
 height: auto;
 margin-left: auto;
 margin-right: auto;
 }
 
 .tripsinfo h3 {
-font-size: 1.5rem;
 font-weight: 700;
 text-align: center;
 padding-bottom: 10px;
@@ -851,7 +866,6 @@ padding-top: 10px;
 }
 
 .printsinfo h3 {
-  font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
   padding-bottom: 10px;
