@@ -687,6 +687,7 @@ border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -834,28 +835,41 @@ border-radius: 10px;
 
 .prints_flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
   padding-bottom: 32px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .printspost {
   display: flex;
   flex-direction: column;
-  width: 450px;
-  height: 600px;
-  margin-bottom: 20px;
-  background-color: #FFFFFF;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  width: 400px;
+  height: 550px;
+  margin: 20px;
+  background-color: #FFFFFF;
   border-radius: 10px;
 }
 
-.printsinfo {
+.printspost img {
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.printspost p {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+/* .printsinfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -878,7 +892,7 @@ border-radius: 10px;
 
 .printsinfo p {
 padding: 10px 50px;
-}
+} */
 
 
 /*Lightbox Gallery Style*/
