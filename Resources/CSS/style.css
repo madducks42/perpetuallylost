@@ -4,30 +4,25 @@ Main Background Color - #D1D2D5
 Blog Post Background Color - Light Grey - #F0EFF0
 Flexbox - White - #FFFFFF
 
+
+font-family: 'Playfair Display', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Amiri', serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Playfair Display SC', serif;
+
 */
 
 /* Basic Structure Style */
 /*************************/
 
-html {
-  font-size: 16px;
-}
-
-  @media screen and (min-width: 900px) {
-    html {font-size: 18px;
-  }
-}
-  @media screen and (min-width: 1200px) {
-      html { font-size: 20px;
-  }
-}
-
 body {
-  font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+  font-family: serif;
   width: 100%;
   margin: 0 auto;
   background-color: #FFFFFF;
   min-height: 100%;
+  font-size: 62.5%;
 }
 
 .flexcontainer {
@@ -51,78 +46,81 @@ img {
 /***************/
 
 h1 {
+  font-family: 'Cormorant Garamond', serif;
+  text-shadow: 2px 2px 2px #FFFFFF;
   font-size: 3.5rem;
   font-weight: bold;
-  font-family: Papyrus;
   color: black;
-  text-shadow: 2px 2px 2px #FFFFFF;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  text-shadow: 2px 2px 2px #FFFFFF;
+  font-size: 2.4rem;
   font-weight: bold;
   color: black;
-  font-family: Papyrus;
-  text-shadow: 2px 2px 2px #FFFFFF;
 }
 
 h3 {
-  font-size: 2rem;
+  font-family: 'Cormorant Garamond', serif;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  font-weight: bold;
+  font-size: 2.2rem;
   font-weight: 500;
   color: black;
-  font-family: Papyrus;
 }
 
 h4 {
-  font-size: 1.6rem;
-  color: black;
-  font-family: Papyrus;
-  text-shadow: 1px 1px 1px #FFFFFF;
-  line-height: 1.4;
+  font-family: 'Cormorant Garamond', serif;
   text-decoration: underline;
-  text-decoration-style: dashed;
+  text-decoration-style: solid;
+  font-size: 2rem;
+  line-height: 1.4;
+  color: black;
 }
 
 h5 {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.4rem;
   color: black;
-  font-family: Papyrus;
-  text-decoration: underline;
-  text-decoration-style: dotted;
 }
 
 p {
-  font-size: 1rem;
-  color: black;
-  font-weight: 100;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: lighter;
+  font-size: 1.4rem;
   line-height: 1.2;
+  color: black;
 }
 
 ul {
-  list-style-type: square;
+  list-style-type: circle;
   margin-bottom: 5px;
 }
 
 li {
-  font-family: Helvetica, sans-serif;
-  line-height: 1.2;
-  font-size: 1rem;
-  color: black;
+  font-family: 'Nanum Myeongjo', serif;
   font-weight: lighter;
+  font-size: 1.4rem;
+  line-height: 1.1;
+  color: black;
   padding-top: 2px;
   padding-bottom: 2px;
-  color: black;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+footer p {
+  font-size: 1rem;
 }
 
 
@@ -228,6 +226,10 @@ nav li {
       display: inline-block;
       padding: 5px;
     }
+
+    .header a {
+      font-size: 1.2rem;
+    }
 }
 
 
@@ -255,7 +257,44 @@ nav li {
 
 @media screen and (min-width: 1025px) and (max-width: 1400px){
     .home_grid{
-      grid-template-columns: 1fr 200px 200px 300px 300px 1fr;
+      grid-template-columns: 1fr auto auto auto auto 1fr;
+      grid-template-rows: 50px
+                          auto
+                          auto
+                          auto
+                          auto;
+      grid-template-areas: "header header header header header header"
+                           "landing landing landing landing landing landing"
+                           ". profile profile content content ."
+                           ". social social content content ."
+                           "gallery gallery gallery gallery gallery gallery"
+                           "footer footer footer footer footer footer";
+     }
+     .profileimage {
+       margin-left: 10px;
+       margin-bottom: 10px;
+     }
+
+    .aboutme_content {
+      padding-left: 10px;
+      margin-right: 10px;
+      text-align: justify;
+    }
+    .aboutme_updates {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .socialmedia {
+      margin-left: 10px;
+    }
+
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px){
+    .home_grid{
+      grid-template-columns: 1fr auto auto auto auto 1fr;
       grid-template-rows: 50px
                           auto
                           auto
@@ -269,38 +308,14 @@ nav li {
                            "footer footer footer footer footer footer";
      }
 
-    .aboutme_content {
-      margin-left: 10px;
-      margin-right: 10px;
-      text-align: justify;
-    }
-    .aboutme_updates {
-      flex-direction: row;
-      align-items: center;
-    }
-
-
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px){
-    .home_grid{
-      grid-template-columns: 1fr 175px 175px 275px 275px 1fr;
-      grid-template-rows: 50px
-                          auto
-                          auto
-                          auto
-                          auto;
-      grid-template-areas: "header header header header header header"
-                           "landing landing landing landing landing landing"
-                           ". profile profile content content ."
-                           ". social social content content ."
-                           "gallery gallery gallery gallery gallery gallery"
-                           "footer footer footer footer footer footer";
+     .profileimage {
+       margin-left: 10px;
      }
 
     .aboutme_content {
-      margin-left: 10px;
+      padding-left: 20px;
       margin-right: 10px;
+      margin-bottom: 10px;
       text-align: justify;
     }
     .aboutme_updates {
@@ -308,27 +323,33 @@ nav li {
       align-items: center;
     }
 
+    .socialmedia {
+      margin-left: 10px;
+    }
+
 
 }
 
-@media screen and (min-width: 641px) and (max-width: 768px){
+@media screen and (min-width: 641px) and (max-width: 899px){
     .home_grid{
-        grid-template-columns: 1fr 200px 200px 200px 1fr;
+        grid-template-columns: 1fr auto auto 1fr;
         grid-template-rows: auto
                             auto
                             auto
                             auto
                             auto
-                            auto
                             auto;
-        grid-template-areas: "header header header header header"
-                             "landing landing landing landing landing"
-                             ". content content content ."
-                             ". profile profile profile ."
-                             ". social social social ."
-                             "gallery gallery gallery gallery gallery"
-                             "footer footer footer footer footer";
+        grid-template-areas: "header header header header"
+                             "landing landing landing landing"
+                             ". content content ."
+                             ". profile social ."
+                             "gallery gallery gallery gallery"
+                             "footer footer footer footer";
 
+    }
+
+    .landing {
+      margin-top: 10px;
     }
 
     .aboutme_content {
@@ -336,9 +357,16 @@ nav li {
       margin-right: 10px;
       text-align: justify;
     }
+
     .aboutme_updates {
       flex-direction: row;
       align-items: center;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .profileimage {
+      margin-bottom: 20px;
     }
 
     .profileimage img {
@@ -346,6 +374,10 @@ nav li {
       max-width: 200px;
       min-height: 100px;
       min-width: 50px;
+    }
+
+    .socialmedia {
+      margin-right: 40px;
     }
 
 }
@@ -371,7 +403,9 @@ nav li {
         max-width: auto;
         min-width: 250px;
     }
-
+    .landing {
+      margin-top: 25px;
+    }
     .aboutme_content {
       margin-left: 10px;
       margin-right: 10px;
@@ -432,9 +466,9 @@ nav li {
 
 .aboutme_updates {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
-  padding: 20px;
+  padding: 10px;
 }
 
 .profileimage {
@@ -484,17 +518,13 @@ nav li {
   border-top: 10px solid black;
 }
 
-.gallery a {
-  font-size: 1.5rem;
-}
-
 .gallery h1 {
-  padding-top: 20px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.gallery h3 {
+.gallery h2 {
   padding-top: 20px;
   text-align: center;
 }
@@ -529,10 +559,22 @@ nav li {
   padding-right: 10px;
 }
 
+.tripspost h5 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.tripspost a {
+  font-size: 1.6rem;
+}
+
 .tripspost p {
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 15px;
 }
 
@@ -578,7 +620,7 @@ nav li {
    }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
+@media screen and (min-width: 900px) and (max-width: 1024px){
     .blog_grid{
       grid-template-columns: 1fr 175px 175px 175px 175px 1fr;
       grid-template-rows: 100px
@@ -595,7 +637,7 @@ nav li {
 
 }
 
-@media screen and (min-width: 641px) and (max-width: 768px){
+@media screen and (min-width: 641px) and (max-width: 899px){
     .blog_grid{
         grid-template-columns: 1fr 200px 200px 200px 1fr;
         grid-template-rows: 100px
@@ -611,6 +653,10 @@ nav li {
                              "gallery gallery gallery gallery gallery"
                              "footer footer footer footer footer";
 
+    }
+
+    .blog_image {
+      margin-top: 20px;
     }
 
     .blog_intro {
@@ -648,6 +694,18 @@ nav li {
         max-width: auto;
         min-width: 250px;
     }
+    .blog_image {
+      margin-top: 20px;
+    }
+    .blog_intro {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    .blog_tips {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
 
 }
 /*Blog Style*/
@@ -658,40 +716,59 @@ nav li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .blog_image img {
   width: 90%;
   height: auto;
   align-self: center;
+  border: 1px solid black;
 }
 
 .blog_intro {
   grid-area: intro;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   margin-top: 20px;
   padding-top: 20px;
-  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.blog_intro h4 {
+  text-align: center;
 }
 
 .blog_intro a {
   font-style: italic;
-  font-weight: bold;
+  font-weight: 400;
+}
+
+.blog_intro p {
+  text-align: justify;
 }
 
 .blog_tips {
   grid-area: tips;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 10px;
+  justify-content: flex-start;
   margin-bottom: 10px;
   padding-bottom: 20px;
-  padding-left: 20px;
+}
+
+.blog_tips h5 {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.blog_tips li {
+  padding-bottom: 5px;
+  text-align: justify;
 }
 
 .blog_gallery {
