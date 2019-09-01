@@ -236,7 +236,7 @@ nav li {
 /* Home Layout Styles */
 /*****************/
 
-  .home_grid{
+  .home_grid {
     display: grid;
 
     grid-template-columns: 1fr 200px 200px 400px 400px 1fr;
@@ -466,9 +466,8 @@ nav li {
 
 .aboutme_updates {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
-  padding: 10px;
 }
 
 .profileimage {
