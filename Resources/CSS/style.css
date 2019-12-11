@@ -247,7 +247,6 @@ nav li {
                          "update update update update update update"
                          "gallery gallery gallery gallery gallery gallery"
                          "footer footer footer footer footer footer";
-    min-height: 100vh;
     background-color: #FFFFFF;
   }
 
@@ -267,6 +266,7 @@ nav li {
                            "gallery gallery gallery gallery gallery gallery"
                            "footer footer footer footer footer footer";
      }
+
      .profileimage {
        margin-left: 10px;
        margin-bottom: 10px;
@@ -425,10 +425,10 @@ nav li {
 .landing {
   grid-area: landing;
   display: flex;
-  background-image: url("../Images/Home/bonsairock_landing.jpg");
+  background-image: url("../Images/Astro/Lightbox/astro_lubec_1.jpg");
   background-size: cover;
   background-position: center;
-  height: 95vh;
+  height: 93vh;
   border-bottom: 10px solid black;
   color: white;
   justify-content: center;
@@ -466,6 +466,16 @@ nav li {
   border: 1px solid black;
 }
 
+.home_grid footer {
+  background-color: #808080;
+  height: 60px;
+}
+
+.home_grid footer p {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
 /* Updates Style */
 /***************/
 
@@ -474,7 +484,7 @@ nav li {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  background-color: #606060;
+  background-color: #808080;
   margin-top: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -595,7 +605,6 @@ nav li {
                          "gallery gallery gallery gallery gallery gallery"
                          "footer footer footer footer footer footer";
     min-height: 100vh;
-    background-color: #FFFFFF;
   }
 
 
@@ -710,6 +719,9 @@ nav li {
 }
 /*Blog Style*/
 /************/
+.blog_grid {
+  background-color: #A9A9A9;
+}
 
 .blog_image {
   grid-area: image;
