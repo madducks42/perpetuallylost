@@ -601,7 +601,7 @@ nav li {
                         auto;
     grid-template-areas: "header header header header header header"
                          ". image image intro intro ."
-                         ". image image tips tips ."
+                         ". tips tips tips tips ."
                          "gallery gallery gallery gallery gallery gallery"
                          "footer footer footer footer footer footer";
     min-height: 100vh;
@@ -717,8 +717,10 @@ nav li {
     }
 
 }
+
 /*Blog Style*/
 /************/
+
 .blog_grid {
   background-color: #A9A9A9;
 }
@@ -742,7 +744,7 @@ nav li {
   grid-area: intro;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -770,6 +772,7 @@ nav li {
   margin-bottom: 10px;
   padding-bottom: 20px;
   padding-right: 30px;
+  border-top: 1px dotted black;
 }
 
 .blog_tips h5 {
@@ -778,6 +781,7 @@ nav li {
   font-weight: bold;
   text-align: center;
   padding-bottom: 5px;
+  padding-top: 15px;
 }
 
 .blog_tips li {
