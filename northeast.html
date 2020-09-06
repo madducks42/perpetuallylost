@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perpetually Lost Photography</title>
+    <link href="Resources/CSS/reset.css" type="text/css" rel="stylesheet">
+    <link href="Resources/CSS/style.css" type="text/css" rel="stylesheet">
+    <link href="Resources/CSS/nanogallery2.css" type="text/css" rel="stylesheet">
+    <link href="Resources/CSS/nanogallery2.woff.min.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="Resources/Scripts/jquery.nanogallery2.js"></script>
+  </head>
+
+
+
+  <body>
+    <div class="gallery_grid">
+      <!-- Header Section -->
+      <div class="header">
+        <div class="image-container logo">
+          <img src="Resources/Icons/logo-big.jpg">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>~</li>
+            <li><a href="costarica.html">Costa Rica</a></li>
+            <li>~</li>
+            <li><a href="nationalparks.html">National Parks</a></li>
+            <li>~</li>
+            <li><a href="northeast.html">Northeast</a></li>
+            <li>~</li>
+            <li><a href="https://www.blog.perpetuallylostphotography.com">Blog</a></li>
+            <li>~</li>
+            <li><a href="https://www.perpetuallylost.shop">Available Prints</a></li>
+            <li>~</li>
+            <li><a href="mailto:info@perpetuallylostphotography.com">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Gallery Section -->
+      <div class="gallery">
+        <script>
+          jQuery(document).ready(function () {
+          jQuery("#my_nanogallery2").nanogallery2({
+            items:[
+              { src: 'Northeast-1.jpg', srct: 'Northeast-thumbnail-1.jpg' },
+              { src: 'Northeast-2.jpg', srct: 'Northeast-thumbnail-2.jpg' },
+              { src: 'Northeast-3.jpg', srct: 'Northeast-thumbnail-3.jpg' },
+              { src: 'Northeast-4.jpg', srct: 'Northeast-thumbnail-4.jpg' },
+              { src: 'Northeast-5.jpg', srct: 'Northeast-thumbnail-5.jpg' },
+              { src: 'Northeast-6.jpg', srct: 'Northeast-thumbnail-6.jpg' },
+              { src: 'Northeast-7.jpg', srct: 'Northeast-thumbnail-7.jpg' },
+              { src: 'Northeast-8.jpg', srct: 'Northeast-thumbnail-8.jpg' },
+              { src: 'Northeast-9.jpg', srct: 'Northeast-thumbnail-9.jpg' },
+              { src: 'Northeast-10.jpg', srct: 'Northeast-thumbnail-10.jpg' },
+              { src: 'Northeast-11.jpg', srct: 'Northeast-thumbnail-11.jpg' },
+              { src: 'Northeast-12.jpg', srct: 'Northeast-thumbnail-12.jpg' },
+              { src: 'Northeast-13.jpg', srct: 'Northeast-thumbnail-13.jpg' },
+              { src: 'Northeast-14.jpg', srct: 'Northeast-thumbnail-14.jpg' },
+              { src: 'Northeast-15.jpg', srct: 'Northeast-thumbnail-15.jpg' },
+              { src: 'Northeast-16.jpg', srct: 'Northeast-thumbnail-16.jpg' },
+              { src: 'Northeast-17.jpg', srct: 'Northeast-thumbnail-17.jpg' },
+              { src: 'Northeast-18.jpg', srct: 'Northeast-thumbnail-18.jpg' },
+              { src: 'Northeast-19.jpg', srct: 'Northeast-thumbnail-19.jpg' },
+              { src: 'Northeast-20.jpg', srct: 'Northeast-thumbnail-20.jpg' },
+              { src: 'Northeast-21.jpg', srct: 'Northeast-thumbnail-21.jpg' },
+              { src: 'Northeast-22.jpg', srct: 'Northeast-thumbnail-22.jpg' },
+              { src: 'Northeast-23.jpg', srct: 'Northeast-thumbnail-23.jpg' },
+              { src: 'Northeast-24.jpg', srct: 'Northeast-thumbnail-24.jpg' },
+              { src: 'Northeast-25.jpg', srct: 'Northeast-thumbnail-25.jpg' },
+              { src: 'Northeast-26.jpg', srct: 'Northeast-thumbnail-26.jpg' },
+              { src: 'Northeast-27.jpg', srct: 'Northeast-thumbnail-27.jpg' },
+              { src: 'Northeast-28.jpg', srct: 'Northeast-thumbnail-28.jpg' },
+              { src: 'Northeast-29.jpg', srct: 'Northeast-thumbnail-29.jpg' },
+              { src: 'Northeast-30.jpg', srct: 'Northeast-thumbnail-30.jpg' },
+              { src: 'Northeast-31.jpg', srct: 'Northeast-thumbnail-31.jpg' },
+              { src: 'Northeast-32.jpg', srct: 'Northeast-thumbnail-32.jpg' }
+
+            ],
+            thumbnailWidth:  '600',
+            thumbnailHeight: 'auto',
+            itemsBaseURL:    'Resources/Images/Northeast/',
+            locationHash:    false,
+            viewerZoom: false,
+            viewerGallery: 'bottom',
+            gallerySorting: 'random',
+            viewerTools:    {
+              topLeft:   'label',
+              topRight:  'fullscreenButton, closeButton'
+            },
+
+          });
+          });
+        </script>
+        <div id="my_nanogallery2"></div>
+      </div>
+      <!-- Footer duh -->
+      <footer>
+          <p>&copy; Perpetually Lost Photography All Rights Reserved</p>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
